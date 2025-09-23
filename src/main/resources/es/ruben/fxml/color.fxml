@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="es.ruben.ColorController"
+      alignment="CENTER" spacing="15"
+      stylesheets="@../css/styles.css"
+      prefWidth="400" prefHeight="350">
+
+    <Rectangle fx:id="colorBox" width="250" height="80" styleClass="color-box"/>
+
+    <Label text="Desplaza los sliders para cambiar el color"/>
+
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Label text="Rojo:"/>
+        <Slider fx:id="sliderRed" min="0" max="255" value="0"
+                blockIncrement="1" showTickLabels="true"
+                showTickMarks="true" majorTickUnit="85"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Label text="Verde:"/>
+        <Slider fx:id="sliderGreen" min="0" max="255" value="0"
+                blockIncrement="1" showTickLabels="true"
+                showTickMarks="true" majorTickUnit="85"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10">
+        <Label text="Azul:"/>
+        <Slider fx:id="sliderBlue" min="0" max="255" value="255"
+                blockIncrement="1" showTickLabels="true"
+                showTickMarks="true" majorTickUnit="85"/>
+    </HBox>
+
+</VBox>

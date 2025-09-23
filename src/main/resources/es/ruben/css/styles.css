@@ -1,0 +1,14 @@
+.root {
+    -fx-background-color: #f5f5f5;
+    -fx-padding: 15;
+}
+
+.label {
+    -fx-font-size: 14px;
+}
+
+.color-box {
+    -fx-arc-width: 20;
+    -fx-arc-height: 20;
+    -fx-stroke: black;
+}
