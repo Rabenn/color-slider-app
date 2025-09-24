@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <mainClass>es.ruben.App</mainClass>
+        <mainClass>es.ruben.Lanzador</mainClass>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
@@ -118,7 +118,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>libs/</classpathPrefix>
-                            <mainClass>es.ruben.App</mainClass>
+                            <mainClass>es.ruben.Lanzador</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -24,6 +24,8 @@ public class App extends Application {
         Scene scene = new Scene(loader.load());
         stage.setTitle("Using Slider Controls");
 
+        scene.getStylesheets().add(getClass().getResource("css/styles.css").toExternalForm());
+
         stage.setMinWidth(450);
         stage.setMinHeight(350);
 
