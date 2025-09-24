@@ -8,7 +8,7 @@ import javafx.scene.shape.Rectangle;
 public class ColorController {
 
     @FXML
-    private Rectangle colorBox;
+    private Rectangle colorRect;
 
     @FXML
     private Slider sliderRed;
@@ -32,6 +32,6 @@ public class ColorController {
         int r = (int) sliderRed.getValue();
         int g = (int) sliderGreen.getValue();
         int b = (int) sliderBlue.getValue();
-        colorBox.setFill(Color.rgb(r, g, b));
+        colorRect.setFill(Color.rgb(r, g, b));
     }
 }

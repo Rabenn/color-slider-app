@@ -1,40 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
 
-<VBox xmlns="http://javafx.com/javafx/17"
-      xmlns:fx="http://javafx.com/fxml"
+<VBox xmlns="http://javafx.com/javafx/21.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="es.ruben.ColorController"
-      alignment="CENTER" spacing="15"
-      stylesheets="@../css/styles.css"
-      prefWidth="400" prefHeight="350">
+      alignment="CENTER"
+      spacing="20"
+      prefWidth="450" prefHeight="350">
 
-    <Rectangle fx:id="colorBox" width="250" height="80" styleClass="color-box"/>
-
+    <Rectangle fx:id="colorRect"
+               width="200" height="100"
+               arcWidth="0" arcHeight="0"
+               fill="rgb(0,0,0)"/>
     <Label text="Desplaza los sliders para cambiar el color"/>
 
+    <!--Rojo -->
     <HBox alignment="CENTER_LEFT" spacing="10">
         <Label text="Rojo:"/>
-        <Slider fx:id="sliderRed" min="0" max="255" value="0"
-                blockIncrement="1" showTickLabels="true"
-                showTickMarks="true" majorTickUnit="85"/>
+        <Slider fx:id="sliderRed"
+                min="0" max="255" value="0"
+                blockIncrement="1"
+                majorTickUnit="50"
+                minorTickCount="4"
+                showTickMarks="true"
+                showTickLabels="true"/>
     </HBox>
 
+    <!-- Verde -->
     <HBox alignment="CENTER_LEFT" spacing="10">
         <Label text="Verde:"/>
-        <Slider fx:id="sliderGreen" min="0" max="255" value="0"
-                blockIncrement="1" showTickLabels="true"
-                showTickMarks="true" majorTickUnit="85"/>
+        <Slider fx:id="sliderGreen"
+                min="0" max="255" value="0"
+                blockIncrement="1"
+                majorTickUnit="50"
+                minorTickCount="4"
+                showTickMarks="true"
+                showTickLabels="true"/>
     </HBox>
 
+    <!--Azul -->
     <HBox alignment="CENTER_LEFT" spacing="10">
         <Label text="Azul:"/>
-        <Slider fx:id="sliderBlue" min="0" max="255" value="255"
-                blockIncrement="1" showTickLabels="true"
-                showTickMarks="true" majorTickUnit="85"/>
+        <Slider fx:id="sliderBlue"
+                min="0" max="255" value="0"
+                blockIncrement="1"
+                majorTickUnit="50"
+                minorTickCount="4"
+                showTickMarks="true"
+                showTickLabels="true"/>
     </HBox>
 
 </VBox>
